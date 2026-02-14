@@ -19,5 +19,9 @@ El proyecto integra frontend y backend, conectando la aplicación con una base d
   -Operaciones CRUD (crear, leer, actualizar y eliminar datos)
   -Panel de administración
 
+## Notas técnicas
+Debido a las limitaciones de tamaño de archivos en GitHub, los archivos de videos originales no han sido incluidos en el repositorio.
+Las imágenes han sido optimizadas para reducir su peso y facilitar su publicación en el repositorio.
+
 ## Autor
 Diana Castellanos 
