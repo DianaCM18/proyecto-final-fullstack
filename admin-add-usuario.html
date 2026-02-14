@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar usuario</title>
+    <link
+      rel="shortcut icon"
+      href="./imagenes/LOGO SIN FONDO.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        gap: 50px;
+      }
+
+      .logo {
+        max-width: 300px;
+        margin-right: 18%;
+      }
+
+      .form-container {
+        max-width: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+       
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                 <li class="nav-item">
+  <a class="nav-link text-white" href="admin-listar-usuario.php">USUARIO</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link text-white" href="admin-listar-recursos.php">RECURSOS</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link text-white" href="admin-listar-receta.php">RECETAS</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link text-white" href="admin-listar-video.php">VIDEOS</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link text-white" href="admin-listar-comentarios.php">COMENTARIOS</a>
+</li>
+                      
+          </div>
+      </div>
+    </nav>
+    </header>
+
+   
+    <div class="container-flex">
+    <div class="form-container">
+      <form action="admin-add-usuario.php" method="POST">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre Usuario</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required />
+
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="correo" name="correo" required />
+
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" name="password" required />
+
+          
+                <label class="form-label">Plan</label>
+                <select class="form-control" name="plan" required>
+                    <option value="nutricion" >nutrición</option>
+                    <option value="clases_online" >clases online</option>
+                    <option value="completo" >completo</option>
+                </select>
+          
+
+          <label for="roll" class="form-label">Roll</label>
+          <input type="text" class="form-control" name="roll" value="usuario" readonly>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Agregar</button>
+        <a href="admin-listar-usuario.php" class="btn btn-primary">Cancelar</a>
+
+      </form>
+    </div>
+    <img src="imagenes/LOGO SIN FONDO.png" alt="Logo" class="logo" />
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
